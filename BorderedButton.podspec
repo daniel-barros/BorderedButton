@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BorderedButton"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UI Button subclass that imitates buttons in the App Store app."
   s.homepage     = "https://github.com/daniel-barros/BorderedButton"
   s.license      = { :type => "MIT", :file => "LICENSE.md" }
