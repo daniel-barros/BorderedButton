@@ -1,7 +1,7 @@
-# BorederedButton
+# BorderedButton
 UI Button subclass that imitates buttons in the App Store app.
 
-<img src="https://raw.githubusercontent.com/daniel-barros/BorederedButton/assets/video.gif" width="200px" height="120px" />
+<img src="https://raw.githubusercontent.com/daniel-barros/BorderedButton/assets/video.gif" width="200px" height="120px" />
 
 ## Installation
 
