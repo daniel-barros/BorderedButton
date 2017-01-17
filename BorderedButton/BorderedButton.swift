@@ -36,7 +36,7 @@ import UIKit
 ///
 /// If used in a Storyboard make sure to set the button type to custom and the title's font to the one desired (it won't be replaced by the default font).
 @IBDesignable
-class BorderedButton: UIButton {
+open class BorderedButton: UIButton {
     
     fileprivate enum Constants {
         static let disabledColor = UIColor(white: 0.485, alpha: 0.35)
@@ -45,17 +45,17 @@ class BorderedButton: UIButton {
         static let defaultFont = UIFont.boldSystemFont(ofSize: 15)
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup(replacingFont: false)
     }
     
-    init() {
+    public init() {
         super.init(frame: .zero)
         setup()
     }
@@ -77,13 +77,13 @@ class BorderedButton: UIButton {
         contentEdgeInsets = Constants.contentInsets
     }
     
-    override var isEnabled: Bool {
+    override open var isEnabled: Bool {
         didSet {
             layer.borderColor = (isEnabled ? tintColor : Constants.disabledColor).cgColor
         }
     }
     
-    override var isHighlighted: Bool {
+    override open var isHighlighted: Bool {
         didSet {
             if oldValue != isHighlighted {
                 UIView.animate(withDuration: Constants.animationDuration) {
